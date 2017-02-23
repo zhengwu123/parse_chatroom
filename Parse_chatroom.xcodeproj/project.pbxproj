@@ -12,6 +12,10 @@
 		269556AA1E5F24AE00F67D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269556A81E5F24AE00F67D5F /* Main.storyboard */; };
 		269556AC1E5F24AE00F67D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269556AB1E5F24AE00F67D5F /* Assets.xcassets */; };
 		269556AF1E5F24AE00F67D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269556AD1E5F24AE00F67D5F /* LaunchScreen.storyboard */; };
+		269556B71E5F2AF000F67D5F /* ChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269556B61E5F2AF000F67D5F /* ChatRoomController.swift */; };
+		269556B91E5F460000F67D5F /* ChatCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269556B81E5F460000F67D5F /* ChatCellTableViewCell.swift */; };
+		269556BC1E5F48CC00F67D5F /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269556BB1E5F48CC00F67D5F /* HRToast+UIView.swift */; };
+		66922E3D043381716252963D /* Pods_Parse_chatroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844DDB578D64A1E3CD49E7BC /* Pods_Parse_chatroom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		269556AB1E5F24AE00F67D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269556AE1E5F24AE00F67D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269556B01E5F24AE00F67D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269556B61E5F2AF000F67D5F /* ChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomController.swift; sourceTree = "<group>"; };
+		269556B81E5F460000F67D5F /* ChatCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCellTableViewCell.swift; sourceTree = "<group>"; };
+		269556BB1E5F48CC00F67D5F /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		844DDB578D64A1E3CD49E7BC /* Pods_Parse_chatroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parse_chatroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DAD6EAED0CFEE0A3C2C6B7 /* Pods-Parse_chatroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse_chatroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parse_chatroom/Pods-Parse_chatroom.release.xcconfig"; sourceTree = "<group>"; };
+		E62B4B1AC6F320AF48A1D8F5 /* Pods-Parse_chatroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse_chatroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parse_chatroom/Pods-Parse_chatroom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66922E3D043381716252963D /* Pods_Parse_chatroom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				269556A31E5F24AE00F67D5F /* Parse_chatroom */,
 				269556A21E5F24AE00F67D5F /* Products */,
+				DC949480A53A4B771A5DFBFD /* Pods */,
+				E1CE741437A2BB1FB9E1E3D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,41 @@
 			isa = PBXGroup;
 			children = (
 				269556A41E5F24AE00F67D5F /* AppDelegate.swift */,
+				269556BA1E5F48CC00F67D5F /* Toast */,
 				269556A61E5F24AE00F67D5F /* ViewController.swift */,
+				269556B81E5F460000F67D5F /* ChatCellTableViewCell.swift */,
+				269556B61E5F2AF000F67D5F /* ChatRoomController.swift */,
 				269556A81E5F24AE00F67D5F /* Main.storyboard */,
 				269556AB1E5F24AE00F67D5F /* Assets.xcassets */,
 				269556AD1E5F24AE00F67D5F /* LaunchScreen.storyboard */,
 				269556B01E5F24AE00F67D5F /* Info.plist */,
 			);
 			path = Parse_chatroom;
+			sourceTree = "<group>";
+		};
+		269556BA1E5F48CC00F67D5F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				269556BB1E5F48CC00F67D5F /* HRToast+UIView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		DC949480A53A4B771A5DFBFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62B4B1AC6F320AF48A1D8F5 /* Pods-Parse_chatroom.debug.xcconfig */,
+				C7DAD6EAED0CFEE0A3C2C6B7 /* Pods-Parse_chatroom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1CE741437A2BB1FB9E1E3D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844DDB578D64A1E3CD49E7BC /* Pods_Parse_chatroom.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269556B31E5F24AE00F67D5F /* Build configuration list for PBXNativeTarget "Parse_chatroom" */;
 			buildPhases = (
+				EAAE7F59BA0535BF9A446221 /* [CP] Check Pods Manifest.lock */,
 				2695569D1E5F24AE00F67D5F /* Sources */,
 				2695569E1E5F24AE00F67D5F /* Frameworks */,
 				2695569F1E5F24AE00F67D5F /* Resources */,
+				FA1CFC6E582854C905640A2E /* [CP] Embed Pods Frameworks */,
+				B05FC87D0F9F8FC80232D73F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +176,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B05FC87D0F9F8FC80232D73F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parse_chatroom/Pods-Parse_chatroom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAAE7F59BA0535BF9A446221 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA1CFC6E582854C905640A2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parse_chatroom/Pods-Parse_chatroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2695569D1E5F24AE00F67D5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				269556A71E5F24AE00F67D5F /* ViewController.swift in Sources */,
+				269556BC1E5F48CC00F67D5F /* HRToast+UIView.swift in Sources */,
+				269556B91E5F460000F67D5F /* ChatCellTableViewCell.swift in Sources */,
+				269556B71E5F2AF000F67D5F /* ChatRoomController.swift in Sources */,
 				269556A51E5F24AE00F67D5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +352,7 @@
 		};
 		269556B41E5F24AE00F67D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62B4B1AC6F320AF48A1D8F5 /* Pods-Parse_chatroom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UKTL25U66K;
@@ -270,6 +366,7 @@
 		};
 		269556B51E5F24AE00F67D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DAD6EAED0CFEE0A3C2C6B7 /* Pods-Parse_chatroom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UKTL25U66K;
@@ -300,6 +397,7 @@
 				269556B51E5F24AE00F67D5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
